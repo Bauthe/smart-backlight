@@ -1,0 +1,10 @@
+[Unit]
+Description=permission setter for smart-backlight
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/smart-backlight-service.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
